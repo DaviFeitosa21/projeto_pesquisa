@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/visual.css">
+    <title>Pesquisa Avançada</title>
+</head>
+<body>
+    <div class="div-container">
+        <div class="div-linha">
+            <section class="section-item">
+                <label for="Razão Social/Nome Fantasia">Razão Social ou Nome Fantasia</label>
+                <input type="text" placeholder="Razão Social ou Fantasia">
+            </section>
+            <section class="section-item">
+                <label for="Razão Social/Nome Fantasia">Atividade Principal (CNAE)</label>
+                <input type="text" placeholder="Código ou nome da atividade">
+                <div class="btn-container">
+                    <div class="btn-on-off">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="check-on-off"></label>
+                    </div>
+                    <span>Incluir atividade secundária?</span>
+                </div>
+            </section>
+            <section class="section-item">
+                <label for="Razão Social/Nome Fantasia">Natureza Jurídica</label>
+                <input type="text" placeholder="Código ou nome da atividade">
+            </section>
+        </div>
+        <div class="div-linha">
+            <section class="section-item">
+                <label for="">Situação Cadastral</label>
+                <select name="" id="">
+                    <option value="">Selecione uma opção:</option>
+                    <option value="">=================</option>
+                    <option value="ativa">Ativa</option>
+                    <option value="baixada">Baixada</option>
+                    <option value="inapta">Inapta</option>
+                    <option value="suspensa">Suspensa</option>
+                    <option value="nula">Nula</option>
+                </select>
+            </section>
+            <section class="section-item">
+                <label for="">Estado (UF)</label>
+                <input type="text" placeholder="Informe o Estado">
+            </section>
+            <section class="section-item">
+                <label for="">Município</label>
+                <input type="text" placeholder="Informe um Município">
+            </section>
+            <section class="section-item">
+                <label for="">Bairro</label>
+                <input type="text" placeholder="Infome um Bairro">
+            </section>
+            <section class="section-item">
+                <label for="">CEP</label>
+                <input type="text" maxlength="8" placeholder="Apenas 8 digitos">
+            </section>
+        </div>
+        <div class="div-linha">
+            <section class="section-item">
+                <label for="">DDD</label>
+                <input type="text" maxlength="2" placeholder="Apenas 2 digitos">
+            </section>
+            <section class="section-item">
+                <label for="">Data abertura - Apartir de </label>
+                <input type="date" class="datepicker" placeholder="Apartir de">
+            </section>
+            <section class="section-item">
+                <label for="">Data abertura - Até </label>
+                <input type="date" placeholder="Até">
+            </section>
+            <section class="section-item">
+                <label for="">Capital Social - Apartir de</label>
+                <input type="number" placeholder="Apartir de">
+            </section>
+            <section class="section-item">
+                <label for="">Capital Social - Até</label>
+                <input type="number" placeholder="Até">
+            </section>
+        </div>
+        <div class="botoes-opcoes">
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2" class="check-on-off"></label>
+                </div>
+                <span>Somente MEI?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3" class="check-on-off"></label>
+                </div>
+                <span>Excluir MEI?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4" class="check-on-off"></label>
+                </div>
+                <span>Com contato de telefone?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5" class="check-on-off"></label>
+                </div>
+                <span>Somente Fixo?</span>
+            </div>
+        </div>
+        <div class="botoes-opcoes">
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6" class="check-on-off"></label>
+                </div>
+                <span>Somente Matriz?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7" class="check-on-off"></label>
+                </div>
+                <span>Excluir Filial?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8" class="check-on-off"></label>
+                </div>
+                <span>Somente Celular?</span>
+            </div>
+            <div class="btn-container">
+                <div class="btn-on-off">
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9" class="check-on-off"></label>
+                </div>
+                <span>Com E-mail?</span>
+            </div>
+        </div>
+        <div class="botoes-confirmacao">
+            <button type="submit">Pesquisar</button>
+            <button type="submit">Salvar</button>
+        </div>
+    </div>
+    <script src="/scripts/calendario.js"></script>
+</body>
+</html>

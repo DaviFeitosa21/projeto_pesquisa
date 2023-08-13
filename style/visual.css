@@ -1,0 +1,128 @@
+/*=====Fontes(Google Fonts)=====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/*=====Container Principal(Alterações dentro do body)=====*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+}
+
+/*=====Container itens=====*/
+
+.div-linha {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-item input {
+    padding: 8px;
+}
+
+.section-item select {
+    padding: 8px;
+}
+
+/*=====Container botões=====*/
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-on-off {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.check-on-off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px;
+    transition: background-color 0.3s;
+}
+
+.check-on-off::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/*=====Botões de Opções Personalizadas=====*/
+
+.botoes-opcoes {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+/*=====Botões de confirmação formulário=====*/
+
+.botoes-confirmacao {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes-confirmacao button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #597ddf;
+    color: white;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.botoes-confirmacao button:hover {
+    background-color: #cfa571;
+    color: black;
+}
+
+/*=====Animação botões=====*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .check-on-off {
+    background-color: #66bb6a; /* Cor quando estiver ligado */
+}
+
+input[type="checkbox"]:checked + .check-on-off::after {
+    transform: translateX(30px); /* Posição quando ligado */
+}
+
